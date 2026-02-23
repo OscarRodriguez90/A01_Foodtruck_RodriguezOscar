@@ -1,0 +1,229 @@
+<!-- ===================== HEADER (NAVBAR + LOGIN MODAL) ===================== -->
+
+<!-- ===================== NAVBAR ===================== -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
+    <div class="container-fluid">
+
+        <!-- Brand / Logo -->
+        <a class="navbar-brand fw-bold fs-4" href="index.html"
+           data-bs-toggle="tooltip" title="Anar a l'inici">
+            <i class="fa-solid fa-leaf me-2 text-warning"></i>VerdFurgó
+        </a>
+
+        <!-- Toggler mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarMain" aria-controls="navbarMain"
+                aria-expanded="false" aria-label="Alternar navegació">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMain">
+
+            <!-- Nav left: food categories -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <!-- FREDS -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                       title="Menú de plats freds">
+                        <i class="fa-solid fa-snowflake me-1"></i>Freds
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li>
+                            <a class="dropdown-item" href="freds_entrepa.html"
+                               data-bs-toggle="tooltip" title="Veure Entrepà Vegetal">
+                                <i class="fa-solid fa-bread-slice me-2 text-warning"></i>Entrepà Vegetal
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="freds_wrap.html"
+                               data-bs-toggle="tooltip" title="Veure Wrap de Hummus">
+                                <i class="fa-solid fa-circle me-2 text-warning"></i>Wrap de Hummus
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="freds_amanida.html"
+                               data-bs-toggle="tooltip" title="Veure Amanida Mediterrània">
+                                <i class="fa-solid fa-bowl-food me-2 text-warning"></i>Amanida Mediterrània
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- CALENTS -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                       title="Menú de plats calents">
+                        <i class="fa-solid fa-fire me-1"></i>Calents
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li>
+                            <a class="dropdown-item" href="calents_burger.html"
+                               data-bs-toggle="tooltip" title="Veure Burger Vegana">
+                                <i class="fa-solid fa-burger me-2 text-warning"></i>Burger Vegana
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="calents_falafel.html"
+                               data-bs-toggle="tooltip" title="Veure Falafel amb Salsa">
+                                <i class="fa-solid fa-circle-dot me-2 text-warning"></i>Falafel amb Salsa
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="calents_croquetes.html"
+                               data-bs-toggle="tooltip" title="Veure Croquetes de Carbassó">
+                                <i class="fa-solid fa-drumstick-bite me-2 text-warning"></i>Croquetes de Carbassó
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- DOLÇOS -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                       title="Menú de plats dolços">
+                        <i class="fa-solid fa-ice-cream me-1"></i>Dolços
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li>
+                            <a class="dropdown-item" href="dolcos_gelat.html"
+                               data-bs-toggle="tooltip" title="Veure Gelat de Maduixa">
+                                <i class="fa-solid fa-ice-cream me-2 text-warning"></i>Gelat de Maduixa
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="dolcos_crepe.html"
+                               data-bs-toggle="tooltip" title="Veure Crêpe de Xocolata Vegana">
+                                <i class="fa-solid fa-cookie me-2 text-warning"></i>Crêpe de Xocolata Vegana
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="dolcos_brownie.html"
+                               data-bs-toggle="tooltip" title="Veure Brownie Vegà">
+                                <i class="fa-solid fa-cake-candles me-2 text-warning"></i>Brownie Vegà
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- BEGUDES -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                       title="Menú de plats begudes">
+                        <i class="fa-solid fa-mug-hot me-1"></i>Begudes
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li>
+                            <a class="dropdown-item" href="begudes_suc.html"
+                               data-bs-toggle="tooltip" title="Veure Suc de Taronja Natural">
+                                <i class="fa-solid fa-glass-water me-2 text-warning"></i>Suc de Taronja Natural
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="begudes_batut.html"
+                               data-bs-toggle="tooltip" title="Veure Batut de Fruites del Bosc">
+                                <i class="fa-solid fa-blender me-2 text-warning"></i>Batut de Fruites del Bosc
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="begudes_te.html"
+                               data-bs-toggle="tooltip" title="Veure Té Verd Matcha">
+                                <i class="fa-solid fa-mug-saucer me-2 text-warning"></i>Té Verd Matcha
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+
+            <!-- Center title -->
+            <span class="navbar-text text-warning fw-semibold mx-auto d-none d-lg-block fst-italic">
+                <i class="fa-solid fa-carrot me-1"></i> Menjar sa, menjar verd
+            </span>
+
+            <!-- Nav right: Qui som + Login/Logout -->
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center gap-2">
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="quisom.html"
+                       data-bs-toggle="tooltip" title="Qui som – Coneix el nostre equip">
+                        <i class="fa-solid fa-people-group me-1"></i>Qui som
+                    </a>
+                </li>
+
+                <!-- Benvingut text (hidden by default) -->
+                <li class="nav-item">
+                    <span class="navbar-text text-warning fw-bold d-none" id="welcomeText"></span>
+                </li>
+
+                <!-- Login button -->
+                <li class="nav-item">
+                    <button class="btn btn-outline-warning btn-sm" id="loginBtn"
+                            data-bs-toggle="modal" data-bs-target="#loginModal"
+                            title="Iniciar sessió al sistema">
+                        <i class="fa-solid fa-right-to-bracket me-1"></i>Login
+                    </button>
+                </li>
+
+                <!-- Logout button -->
+                <li class="nav-item">
+                    <button class="btn btn-outline-light btn-sm" id="logoutBtn"
+                            title="Tancar sessió" data-bs-toggle="tooltip">
+                        <i class="fa-solid fa-right-from-bracket me-1"></i>Logout
+                    </button>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ===================== LOGIN MODAL ===================== -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-slideout" style="margin-top:56px; margin-right:0; margin-bottom:0; position:fixed; right:0; top:0; height:auto; max-width:360px; width:100%;">
+        <div class="modal-content border-success">
+            <div class="modal-header bg-success text-white">
+                <h5 class="modal-title" id="loginModalLabel">
+                    <i class="fa-solid fa-leaf me-2"></i>Inici de Sessió
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Tancar" data-bs-toggle="tooltip" title="Tancar el formulari"></button>
+            </div>
+            <div class="modal-body">
+                <form id="loginForm" novalidate>
+                    <div class="mb-3">
+                        <label for="inputUsername" class="form-label fw-semibold">
+                            <i class="fa-solid fa-user me-1 text-success"></i>Nom d'usuari
+                        </label>
+                        <input type="text" class="form-control" id="inputUsername"
+                               placeholder="El teu nom o correu" required>
+                        <div class="invalid-feedback">El nom d'usuari és obligatori.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputPassword" class="form-label fw-semibold">
+                            <i class="fa-solid fa-lock me-1 text-success"></i>Contrasenya
+                        </label>
+                        <input type="password" class="form-control" id="inputPassword"
+                               placeholder="La teva contrasenya" required>
+                        <div class="invalid-feedback">La contrasenya és obligatòria.</div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                        id="cancelLoginBtn" data-bs-toggle="tooltip" title="Cancel·lar i tancar">
+                    <i class="fa-solid fa-xmark me-1"></i>Cancel·lar
+                </button>
+                <button type="button" class="btn btn-success" id="submitLoginBtn"
+                        data-bs-toggle="tooltip" title="Enviar les credencials">
+                    <i class="fa-solid fa-paper-plane me-1"></i>Enviar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
