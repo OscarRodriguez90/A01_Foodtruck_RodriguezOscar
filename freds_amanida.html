@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amanida Mediterrània | VerdFurgó</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- ===================== NAVBAR ===================== -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
+    <div class="container-fluid">
+
+        <!-- Brand / Logo -->
+        <a class="navbar-brand fw-bold fs-4" href="index.html"
+           data-bs-toggle="tooltip" title="Anar a l'inici">
+            <i class="fa-solid fa-leaf me-2 text-warning"></i>VerdFurgó
+        </a>
+
+        <!-- Toggler mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarMain" aria-controls="navbarMain"
+                aria-expanded="false" aria-label="Alternar navegació">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMain">
+
+            <!-- Nav left: food categories -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <!-- FREDS -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active"
+                       href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                       title="Menú de plats freds">
+                        <i class="fa-solid fa-snowflake me-1"></i>Freds
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li>
+                            <a class="dropdown-item" href="freds_entrepa.html"
+                               data-bs-toggle="tooltip" title="Veure Entrepà Vegetal">
+                                <i class="fa-solid fa-bread-slice me-2 text-warning"></i>Entrepà Vegetal
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="freds_wrap.html"
+                               data-bs-toggle="tooltip" title="Veure Wrap de Hummus">
+                                <i class="fa-solid fa-circle me-2 text-warning"></i>Wrap de Hummus
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="freds_amanida.html"
+                               data-bs-toggle="tooltip" title="Veure Amanida Mediterrània">
+                                <i class="fa-solid fa-bowl-food me-2 text-warning"></i>Amanida Mediterrània
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- CALENTS -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                       title="Menú de plats calents">
+                        <i class="fa-solid fa-fire me-1"></i>Calents
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li>
+                            <a class="dropdown-item" href="calents_burger.html"
+                               data-bs-toggle="tooltip" title="Veure Burger Vegana">
+                                <i class="fa-solid fa-burger me-2 text-warning"></i>Burger Vegana
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="calents_falafel.html"
+                               data-bs-toggle="tooltip" title="Veure Falafel amb Salsa">
+                                <i class="fa-solid fa-circle-dot me-2 text-warning"></i>Falafel amb Salsa
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="calents_croquetes.html"
+                               data-bs-toggle="tooltip" title="Veure Croquetes de Carbassó">
+                                <i class="fa-solid fa-drumstick-bite me-2 text-warning"></i>Croquetes de Carbassó
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- DOLÇOS -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                       title="Menú de plats dolços">
+                        <i class="fa-solid fa-ice-cream me-1"></i>Dolços
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li>
+                            <a class="dropdown-item" href="dolcos_gelat.html"
+                               data-bs-toggle="tooltip" title="Veure Gelat de Maduixa">
+                                <i class="fa-solid fa-ice-cream me-2 text-warning"></i>Gelat de Maduixa
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="dolcos_crepe.html"
+                               data-bs-toggle="tooltip" title="Veure Crêpe de Xocolata Vegana">
+                                <i class="fa-solid fa-cookie me-2 text-warning"></i>Crêpe de Xocolata Vegana
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="dolcos_brownie.html"
+                               data-bs-toggle="tooltip" title="Veure Brownie Vegà">
+                                <i class="fa-solid fa-cake-candles me-2 text-warning"></i>Brownie Vegà
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- BEGUDES -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                       href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                       title="Menú de plats begudes">
+                        <i class="fa-solid fa-mug-hot me-1"></i>Begudes
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li>
+                            <a class="dropdown-item" href="begudes_suc.html"
+                               data-bs-toggle="tooltip" title="Veure Suc de Taronja Natural">
+                                <i class="fa-solid fa-glass-water me-2 text-warning"></i>Suc de Taronja Natural
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="begudes_batut.html"
+                               data-bs-toggle="tooltip" title="Veure Batut de Fruites del Bosc">
+                                <i class="fa-solid fa-blender me-2 text-warning"></i>Batut de Fruites del Bosc
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="begudes_te.html"
+                               data-bs-toggle="tooltip" title="Veure Té Verd Matcha">
+                                <i class="fa-solid fa-mug-saucer me-2 text-warning"></i>Té Verd Matcha
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+
+            <!-- Center title -->
+            <span class="navbar-text text-warning fw-semibold mx-auto d-none d-lg-block fst-italic">
+                <i class="fa-solid fa-carrot me-1"></i> Menjar sa, menjar verd
+            </span>
+
+            <!-- Nav right: Qui som + Login/Logout -->
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center gap-2">
+
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="quisom.html"
+                       data-bs-toggle="tooltip" title="Qui som – Coneix el nostre equip">
+                        <i class="fa-solid fa-people-group me-1"></i>Qui som
+                    </a>
+                </li>
+
+                <!-- Benvingut text (hidden by default) -->
+                <li class="nav-item">
+                    <span class="navbar-text text-warning fw-bold d-none" id="welcomeText"></span>
+                </li>
+
+                <!-- Login button -->
+                <li class="nav-item">
+                    <button class="btn btn-outline-warning btn-sm" id="loginBtn"
+                            data-bs-toggle="modal" data-bs-target="#loginModal"
+                            title="Iniciar sessió al sistema">
+                        <i class="fa-solid fa-right-to-bracket me-1"></i>Login
+                    </button>
+                </li>
+
+                <!-- Logout button -->
+                <li class="nav-item">
+                    <button class="btn btn-outline-light btn-sm" id="logoutBtn"
+                            title="Tancar sessió" data-bs-toggle="tooltip">
+                        <i class="fa-solid fa-right-from-bracket me-1"></i>Logout
+                    </button>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ===================== LOGIN MODAL ===================== -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-slideout" style="margin-top:56px; margin-right:0; margin-bottom:0; position:fixed; right:0; top:0; height:auto; max-width:360px; width:100%;">
+        <div class="modal-content border-success">
+            <div class="modal-header bg-success text-white">
+                <h5 class="modal-title" id="loginModalLabel">
+                    <i class="fa-solid fa-leaf me-2"></i>Inici de Sessió
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Tancar" data-bs-toggle="tooltip" title="Tancar el formulari"></button>
+            </div>
+            <div class="modal-body">
+                <form id="loginForm" novalidate>
+                    <div class="mb-3">
+                        <label for="inputUsername" class="form-label fw-semibold">
+                            <i class="fa-solid fa-user me-1 text-success"></i>Nom d'usuari
+                        </label>
+                        <input type="text" class="form-control" id="inputUsername"
+                               placeholder="El teu nom o correu" required>
+                        <div class="invalid-feedback">El nom d'usuari és obligatori.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputPassword" class="form-label fw-semibold">
+                            <i class="fa-solid fa-lock me-1 text-success"></i>Contrasenya
+                        </label>
+                        <input type="password" class="form-control" id="inputPassword"
+                               placeholder="La teva contrasenya" required>
+                        <div class="invalid-feedback">La contrasenya és obligatòria.</div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                        id="cancelLoginBtn" data-bs-toggle="tooltip" title="Cancel·lar i tancar">
+                    <i class="fa-solid fa-xmark me-1"></i>Cancel·lar
+                </button>
+                <button type="button" class="btn btn-success" id="submitLoginBtn"
+                        data-bs-toggle="tooltip" title="Enviar les credencials">
+                    <i class="fa-solid fa-paper-plane me-1"></i>Enviar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<main class="container my-4">
+
+    <!-- BREADCRUMB -->
+    <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb bg-light rounded p-2 px-3 border">
+            <li class="breadcrumb-item">
+                <a href="index.html"
+                   data-bs-toggle="tooltip" title="Tornar a la pàgina d'inici">
+                    <i class="fa-solid fa-house me-1 text-success"></i>Inici
+                </a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="index.html#freds"
+                   data-bs-toggle="tooltip" title="Categoria: Freds">
+                    Freds
+                </a>
+            </li>
+            <li class="breadcrumb-item active fw-semibold" aria-current="page">
+                Amanida Mediterrània
+            </li>
+        </ol>
+    </nav>
+
+    <!-- PRODUCT CONTENT -->
+    <div class="row g-4 align-items-start mb-5">
+
+        <!-- Image: ~40% width -->
+        <div class="col-md-5">
+            <img src="img/ensaladaMediterranea.webp" class="img-fluid rounded shadow w-100"
+                 alt="Amanida Mediterrània"
+                 style="max-height:420px; object-fit:cover;">
+        </div>
+
+        <!-- Product Details: ~60% width -->
+        <div class="col-md-7">
+            <h1 class="fw-bold text-success mb-1">
+                <i class="fa-solid fa-bowl-food me-2"></i>Amanida Mediterrània
+            </h1>
+            <span class="badge bg-success mb-3">Freds</span>
+
+            <p class="lead">Una amanida que és un viatge al Mediterrani! Combinació perfecta de colors i textures: enciam romà cruixent, tomàquets cherry de la nostra hort urbana, olives kalamata autèntiques, ceba lila, cogombre fresc i formatge feta grec. Amanida amb el nostre vinagre balsàmic especial.</p>
+            <hr>
+
+            <!-- Details list -->
+            <ul class="list-group list-group-flush mb-3">
+                <li class="list-group-item">
+                    <i class="fa-solid fa-seedling me-2 text-success"></i>
+                    <strong>Ingredients:</strong> Enciam romà, tomàquets cherry, olives kalamata, ceba lila, cogombre, formatge feta, pebronets del piquillo, vinagre balsàmic de Mòdena, oli d'oliva verge extra, orenga
+                </li>
+                <li class="list-group-item">
+                    <i class="fa-solid fa-tag me-2 text-warning"></i>
+                    <strong>Preu:</strong>
+                    <span class="text-success fw-bold">7,20 €</span>
+                </li>
+                <li class="list-group-item">
+                    <i class="fa-solid fa-earth-europe me-2 text-info"></i>
+                    <strong>Cuina:</strong> Mediterrània / Grega
+                </li>
+                <li class="list-group-item">
+                    <i class="fa-solid fa-triangle-exclamation me-2 text-warning"></i>
+                    <strong>Al·lèrgens:</strong> Làctis
+                </li>
+                <li class="list-group-item">
+                    <i class="fa-solid fa-fire-flame-curved me-2 text-danger"></i>
+                    <strong>Calories:</strong> 290 kcal per ració
+                </li>
+            </ul>
+
+            <!-- Rating + Stars -->
+            <div class="d-flex align-items-center gap-3 flex-wrap">
+                <div>
+                    <span class="text-warning fs-5">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <small class="text-muted ms-1">(4.0 / 5)</small>
+                </div>
+                <button class="btn btn-outline-success btn-sm"
+                        data-bs-toggle="tooltip" title="M'agrada! Valoració positiva">
+                    <i class="fa-solid fa-thumbs-up text-success me-1"></i>M'agrada
+                </button>
+                <button class="btn btn-outline-danger btn-sm"
+                        data-bs-toggle="tooltip" title="No m'agrada. Valoració negativa">
+                    <i class="fa-solid fa-thumbs-down text-danger me-1"></i>No m'agrada
+                </button>
+                <button class="btn btn-success"
+                        data-bs-toggle="tooltip" title="Afegir al cistell de la compra">
+                    <i class="fa-solid fa-cart-plus me-1"></i>Afegir a la comanda
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGINATION -->
+    <nav aria-label="Navegació de pàgines" class="mt-3">
+        <ul class="pagination justify-content-center flex-wrap">
+            <li class="page-item">
+                <a class="page-link" href="index.html"
+                   data-bs-toggle="tooltip" title="Tornar a la pàgina d'inici">
+                    <i class="fa-solid fa-house"></i>
+                </a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="freds_entrepa.html"
+                   data-bs-toggle="tooltip" title="Entrepà Vegetal">Entrepà</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="freds_wrap.html"
+                   data-bs-toggle="tooltip" title="Wrap de Hummus">Wrap</a>
+            </li>
+            <li class="page-item active" aria-current="page">
+                <a class="page-link" href="freds_amanida.html"
+                   data-bs-toggle="tooltip" title="Amanida Mediterrània">Amanida</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="calents_burger.html"
+                   data-bs-toggle="tooltip" title="Burger Vegana">Burger</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="calents_falafel.html"
+                   data-bs-toggle="tooltip" title="Falafel amb Salsa">Falafel</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="calents_croquetes.html"
+                   data-bs-toggle="tooltip" title="Croquetes de Carbassó">Croquetes</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="dolcos_gelat.html"
+                   data-bs-toggle="tooltip" title="Gelat de Maduixa">Gelat</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="dolcos_crepe.html"
+                   data-bs-toggle="tooltip" title="Crêpe de Xocolata">Crêpe</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="dolcos_brownie.html"
+                   data-bs-toggle="tooltip" title="Brownie Vegà">Brownie</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="begudes_suc.html"
+                   data-bs-toggle="tooltip" title="Suc de Taronja">Suc</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="begudes_batut.html"
+                   data-bs-toggle="tooltip" title="Batut de Fruites">Batut</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="begudes_te.html"
+                   data-bs-toggle="tooltip" title="Té Verd Matcha">Té Matcha</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href="quisom.html"
+                   data-bs-toggle="tooltip" title="Qui som">Qui som</a>
+            </li>
+        </ul>
+    </nav>
+
+</main>
+
+<!-- ===================== COOKIE ALERT ===================== -->
+<div class="alert alert-warning alert-dismissible fade show mb-0 rounded-0 border-0" role="alert" id="cookieAlert">
+    <div class="container">
+        <i class="fa-solid fa-cookie-bite me-2"></i>
+        <strong>Avís de Cookies:</strong> Aquest lloc web utilitza cookies per millorar la teva experiència de navegació.
+        En continuar navegant, acceptes el nostre ús de cookies.
+        <a href="#" class="alert-link ms-1" data-bs-toggle="tooltip" title="Llegir la política de privacitat">Més informació</a>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Tancar avís de cookies"
+                data-bs-toggle="tooltip" title="Tancar aquest avís"></button>
+    </div>
+</div>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="bg-dark text-light py-4 mt-0">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- Branding -->
+            <div class="col-md-4 mb-3 mb-md-0 text-center text-md-start">
+                <h5 class="fw-bold text-success mb-1">
+                    <i class="fa-solid fa-leaf me-2"></i>VerdFurgó
+                </h5>
+                <small class="text-muted">Food Truck Vegetal · Barcelona</small>
+                <br>
+                <small class="text-muted"><i class="fa-solid fa-location-dot me-1"></i>Mercat de Sant Antoni, cada divendres 12h–20h</small>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="col-md-4 mb-3 mb-md-0 text-center">
+                <p class="mb-2 fw-semibold text-success">Segueix-nos!</p>
+                <a href="#" class="btn btn-outline-success btn-sm me-1"
+                   data-bs-toggle="tooltip" title="Segueix-nos a Instagram">
+                    <i class="fa-brands fa-instagram fa-lg"></i>
+                </a>
+                <a href="#" class="btn btn-outline-primary btn-sm me-1"
+                   data-bs-toggle="tooltip" title="Segueix-nos a Facebook">
+                    <i class="fa-brands fa-facebook fa-lg"></i>
+                </a>
+                <a href="#" class="btn btn-outline-info btn-sm me-1"
+                   data-bs-toggle="tooltip" title="Segueix-nos a Twitter/X">
+                    <i class="fa-brands fa-x-twitter fa-lg"></i>
+                </a>
+                <a href="#" class="btn btn-outline-danger btn-sm me-1"
+                   data-bs-toggle="tooltip" title="Mira els nostres vídeos al YouTube">
+                    <i class="fa-brands fa-youtube fa-lg"></i>
+                </a>
+                <a href="#" class="btn btn-outline-warning btn-sm me-1"
+                   data-bs-toggle="tooltip" title="Segueix-nos a TikTok">
+                    <i class="fa-brands fa-tiktok fa-lg"></i>
+                </a>
+                <a href="#" class="btn btn-outline-light btn-sm"
+                   data-bs-toggle="tooltip" title="Uneix-te al nostre grup de Whatsapp">
+                    <i class="fa-brands fa-whatsapp fa-lg"></i>
+                </a>
+            </div>
+
+            <!-- Contact -->
+            <div class="col-md-4 text-center text-md-end">
+                <p class="mb-1 fw-semibold text-success">Contacte</p>
+                <small class="d-block"><i class="fa-solid fa-envelope me-1"></i>hola@verdfurgo.cat</small>
+                <small class="d-block"><i class="fa-solid fa-phone me-1"></i>+34 600 123 456</small>
+                <small class="d-block mt-2 text-muted">&copy; 2026 VerdFurgó. Tots els drets reservats.</small>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap 5 JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Global scripts: tooltips + login modal logic -->
+<script>
+    // Initialize all tooltips
+    document.addEventListener('DOMContentLoaded', function () {
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+        tooltipTriggerList.forEach(function (el) {
+            new bootstrap.Tooltip(el, { trigger: 'hover focus' });
+        });
+    });
+
+    // Login modal: submit -> show welcome text in navbar
+    document.getElementById('submitLoginBtn').addEventListener('click', function () {
+        const usernameInput = document.getElementById('inputUsername');
+        const passwordInput = document.getElementById('inputPassword');
+        const form = document.getElementById('loginForm');
+
+        form.classList.add('was-validated');
+
+        if (!usernameInput.value.trim() || !passwordInput.value.trim()) {
+            return;
+        }
+
+        const username = usernameInput.value.trim();
+
+        // Show welcome message in navbar
+        const welcomeText = document.getElementById('welcomeText');
+        welcomeText.textContent = 'Benvingut ' + username + '!';
+        welcomeText.classList.remove('d-none');
+
+        // Hide login button, keep logout
+        document.getElementById('loginBtn').classList.add('d-none');
+
+        // Close modal
+        const modal = bootstrap.Modal.getInstance(document.getElementById('loginModal'));
+        modal.hide();
+
+        // Reset form
+        form.classList.remove('was-validated');
+        form.reset();
+    });
+
+    // Logout button: hide welcome text, show login button
+    document.getElementById('logoutBtn').addEventListener('click', function () {
+        document.getElementById('welcomeText').textContent = '';
+        document.getElementById('welcomeText').classList.add('d-none');
+        document.getElementById('loginBtn').classList.remove('d-none');
+    });
+</script>
+</body>
+</html>
